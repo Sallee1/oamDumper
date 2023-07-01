@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\DsGraph">
+      <UniqueIdentifier>{706bc8b1-c6de-4731-a857-e7059f3c9920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsGraph">
+      <UniqueIdentifier>{37ca66a9-1723-4923-ab69-9c24f4636191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsGraph\impl">
+      <UniqueIdentifier>{1a70c337-b597-4eff-b073-620292dcd66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DsGraph\impl">
+      <UniqueIdentifier>{66da3b59-a312-4517-b3f6-0c3acced1b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsGraph\common">
+      <UniqueIdentifier>{cd62f496-8c0a-4d54-a85c-29e0f931d756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DsGraph\common">
+      <UniqueIdentifier>{f29fc2ac-8251-4bc6-8197-329084aab5ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsPal">
+      <UniqueIdentifier>{c3c8b03c-536a-40ae-abb6-41a8634090dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsPal\impl">
+      <UniqueIdentifier>{07f0f71f-bd38-4acc-9c73-d16f16fd5cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsOam">
+      <UniqueIdentifier>{da1a2f98-1cb1-407c-baa8-820eb874c936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DsOam\Impl">
+      <UniqueIdentifier>{f441690d-46f1-4ec8-85d8-82c8c81a8e12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.cpp">
+      <Filter>源文件\DsGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsGraph\type.cpp">
+      <Filter>源文件\DsGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsGraph\Factory_DsGraph.cpp">
+      <Filter>源文件\DsGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsGraph\impl\DsGraph_NCGR.cpp">
+      <Filter>源文件\DsGraph\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsGraph\impl\DsGraph_NCBR.cpp">
+      <Filter>源文件\DsGraph\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsGraph\common\DsGraph_Nitro.cpp">
+      <Filter>源文件\DsGraph\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsPal\Interface_DsPal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsPal\Impl\DsPal_NCLR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsPal\Factory_DsPal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.h">
+      <Filter>头文件\DsGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsGraph\type.h">
+      <Filter>头文件\DsGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsGraph\impl\DsGraph_NCGR.h">
+      <Filter>头文件\DsGraph\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsGraph\Factory_DsGraph.h">
+      <Filter>头文件\DsGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsGraph\impl\DsGraph_NCBR.h">
+      <Filter>头文件\DsGraph\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsGraph\common\DsGraph_Nitro.h">
+      <Filter>头文件\DsGraph\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsPal\Interface_DsPal.h">
+      <Filter>头文件\DsPal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsPal\Impl\DsPal_NCLR.h">
+      <Filter>头文件\DsPal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsPal\Factory_DsPal.h">
+      <Filter>头文件\DsPal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsOam\Interface_DsOam.h">
+      <Filter>头文件\DsOam</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
