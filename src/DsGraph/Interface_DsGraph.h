@@ -10,6 +10,6 @@ protected:
   uint32_t dataSize;
 public:
   virtual void getDataFromFile(std::ifstream& graphFile) = 0;
-  virtual cv::Mat getOam(DsOamType::OamData oamData) = 0;
+  virtual cv::Mat getOam(cv::Mat palette, DsOamType::OamData oamData) = 0;
 };
 

@@ -1,5 +1,6 @@
 ﻿#include "DsGraph_Nitro.h"
 #include "pch.h"
+
 void DsGraph_Nitro::getDataFromFile(std::ifstream& graphFile)
 {
   graphFile.seekg(0x28);

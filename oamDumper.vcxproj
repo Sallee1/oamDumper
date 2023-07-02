@@ -32,6 +32,7 @@
     <ClCompile Include="src\DsPal\Impl\DsPal_NCLR.cpp" />
     <ClCompile Include="src\DsPal\Interface_DsPal.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Utils\utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.h" />
@@ -50,7 +51,7 @@
     </ClCompile>
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\type.h" />
-    <ClInclude Include="src\utils.h" />
+    <ClInclude Include="src\Utils\utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

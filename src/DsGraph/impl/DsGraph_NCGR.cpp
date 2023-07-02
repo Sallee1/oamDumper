@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "DsGraph_NCGR.h"
+#include "Utils/utils.h"
 
-cv::Mat DsGraph_NCGR::getOam(DsOamType::OamData oamData)
+cv::Mat DsGraph_NCGR::getOam(cv::Mat palette, DsOamType::OamData oamData)
 {
   //获取子数据
   cv::Mat subData = getSubData(oamData.charaId, oamData.oamRect.size(), oamData.isBpp8);
@@ -20,5 +21,5 @@ cv::Mat DsGraph_NCGR::getOam(DsOamType::OamData oamData)
       tileImg.copyTo(outOam(roi));
     }
   }
-  return outOam;
+  return Utils::setPalette(outOam, palette, oamData.palId);
 }

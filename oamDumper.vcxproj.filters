@@ -55,6 +55,12 @@
     <Filter Include="源文件\DsOam\Impl">
       <UniqueIdentifier>{f149f31a-0890-4501-9333-d8cdec8a3f0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Utils">
+      <UniqueIdentifier>{48e5a467-2d8b-4787-8899-172ec47b4d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{ab0bb873-e8d3-4235-a2f0-8c6b5469da4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -99,6 +105,9 @@
     <ClCompile Include="src\DsOam\Interface_DsOam.cpp">
       <Filter>源文件\DsOam</Filter>
     </ClCompile>
+    <ClCompile Include="src\Utils\utils.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.h">
@@ -128,9 +137,6 @@
     <ClInclude Include="src\DsPal\Factory_DsPal.h">
       <Filter>头文件\DsPal</Filter>
     </ClInclude>
-    <ClInclude Include="src\utils.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\DsOam\Interface_DsOam.h">
       <Filter>头文件\DsOam</Filter>
     </ClInclude>
@@ -142,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="src\DsOam\Factory_DsOam.h">
       <Filter>头文件\DsOam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\utils.h">
+      <Filter>头文件\Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

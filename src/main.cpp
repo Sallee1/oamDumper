@@ -2,7 +2,7 @@
 #include <DsGraph/Factory_DsGraph.h>
 #include <DsPal/Factory_DsPal.h>
 #include <DsOam/Factory_DsOam.h>
-#include <utils.h>
+#include <Utils/utils.h>
 #include <pch.h>
 
 int main(int argc, char* argv[])
@@ -29,8 +29,7 @@ int main(int argc, char* argv[])
   {
     for (const auto& oamData : oamFrame)
     {
-      cv::Mat oam = dsGraph->getOam(oamData);
-      oam = Utils::setPalette(oam, dsPal->getPal(), oamData.palId);
+      cv::Mat oam = dsGraph->getOam(dsPal->getPal(), oamData);
     }
   }
 }

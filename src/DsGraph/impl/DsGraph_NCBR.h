@@ -5,5 +5,5 @@
 
 class DsGraph_NCBR :public DsGraph_Nitro {
 public:
-  cv::Mat getOam(DsOamType::OamData oamData) override;
+  cv::Mat getOam(cv::Mat palette, DsOamType::OamData oamData) override;
 };
