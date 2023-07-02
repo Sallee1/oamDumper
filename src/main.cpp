@@ -1,6 +1,7 @@
 ﻿#include <opencv2/opencv.hpp>
 #include <DsGraph/Factory_DsGraph.h>
 #include <DsPal/Factory_DsPal.h>
+#include <DsOam/Factory_DsOam.h>
 #include <utils.h>
 #include <pch.h>
 
@@ -14,13 +15,22 @@ int main(int argc, char* argv[])
   std::ifstream nclrFile(nclrPath, std::fstream::in | std::fstream::binary);
   std::ifstream ncerFile(ncerPath, std::fstream::in | std::fstream::binary);
 
+  auto dsOam = Factory_DsOam::getInstance(Factory_DsOam::NCER);
+  dsOam->getDataFromFile(ncerFile);
+
   auto dsGraph = Factory_DsGraph::getInstance(Factory_DsGraph::NCGR);
   dsGraph->getDataFromFile(ncgrFile);
-  cv::Mat graph = dsGraph->getOam(204, OamSize::h_medium);
+
 
   auto dsPal = Factory_DsPal::getInstance(Factory_DsPal::NCLR);
   dsPal->getDataFromFile(nclrFile);
-  cv::Mat pal = dsPal->getPal();
 
-  auto res = Utils::setPalette(graph, pal);
+  for (const auto& oamFrame : *dsOam)
+  {
+    for (const auto& oamData : oamFrame)
+    {
+      cv::Mat oam = dsGraph->getOam(oamData);
+      oam = Utils::setPalette(oam, dsPal->getPal(), oamData.palId);
+    }
+  }
 }
