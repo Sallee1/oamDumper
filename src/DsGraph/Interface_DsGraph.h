@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "DsGraph/type.h"
+#include "type.h"
 #include "pch.h"
 
 class Interface_DsGraph
@@ -10,6 +10,6 @@ protected:
   uint32_t dataSize;
 public:
   virtual void getDataFromFile(std::ifstream& graphFile) = 0;
-  virtual cv::Mat getOam(uint32_t charaID, OamSize sizeEnum, bool isBpp8 = false) = 0;
+  virtual cv::Mat getOam(DsOamType::OamData oamData) = 0;
 };
 

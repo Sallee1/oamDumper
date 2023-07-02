@@ -14,10 +14,10 @@ void DsPal_NCLR::getDataFromFile(std::ifstream& palFile)
   cv::Mat palData = cv::Mat::zeros(1, 256, CV_16U);
   rawPalData.copyTo(palData(cv::Rect2i(0, 0, colorCount, 1)));
   //分离调色板
-  cv::Mat placeR = (palData & 0b11111) * 0b111;
-  cv::Mat placeG = (palData & 0b1111100000) / 0b11;
-  cv::Mat placeB = (palData & 0b111110000000000) / 0b1111111;
+  cv::Mat placeR = (palData & 0b11111) * 0b1000;
+  cv::Mat placeG = (palData & 0b1111100000) / 0b100;
+  cv::Mat placeB = (palData & 0b111110000000000) / 0b10000000;
   //转换为3通道Mat
-  cv::merge(std::vector<cv::Mat>{ placeR, placeG, placeB }, palette);
+  cv::merge(std::vector<cv::Mat>{ placeB, placeG, placeR }, palette);
   palette.convertTo(palette, CV_8U);
 }

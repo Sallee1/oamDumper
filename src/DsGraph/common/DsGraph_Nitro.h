@@ -7,5 +7,5 @@ class DsGraph_Nitro :public Interface_DsGraph
 public:
   void getDataFromFile(std::ifstream& graphFile) override;
 protected:
-  cv::Mat getSubData(uint32_t charaID, OamSize sizeEnum, bool isBpp8);
+  cv::Mat getSubData(uint32_t charaID, cv::Size2i charaSize, bool isBpp8);
 };

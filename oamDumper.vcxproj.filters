@@ -43,6 +43,18 @@
     <Filter Include="头文件\DsOam\Impl">
       <UniqueIdentifier>{f441690d-46f1-4ec8-85d8-82c8c81a8e12}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\DsOam">
+      <UniqueIdentifier>{b2b645ef-daec-4a7e-9378-1b8abca02a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DsPal">
+      <UniqueIdentifier>{e8526181-6c16-4fc2-85ab-b20fce6c4ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DsPal\impl">
+      <UniqueIdentifier>{f143a236-dec4-43b1-8838-def7ec54d768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DsOam\Impl">
+      <UniqueIdentifier>{f149f31a-0890-4501-9333-d8cdec8a3f0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -66,24 +78,30 @@
     <ClCompile Include="src\DsGraph\common\DsGraph_Nitro.cpp">
       <Filter>源文件\DsGraph\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\DsPal\Interface_DsPal.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DsPal\Impl\DsPal_NCLR.cpp">
+    <ClCompile Include="src\pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\DsPal\Factory_DsPal.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\DsPal</Filter>
     </ClCompile>
-    <ClCompile Include="src\pch.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="src\DsPal\Interface_DsPal.cpp">
+      <Filter>源文件\DsPal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsPal\Impl\DsPal_NCLR.cpp">
+      <Filter>源文件\DsPal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsOam\impl\DsOam_NCER.cpp">
+      <Filter>源文件\DsOam\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsOam\Factory_DsOam.cpp">
+      <Filter>源文件\DsOam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DsOam\Interface_DsOam.cpp">
+      <Filter>源文件\DsOam</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.h">
-      <Filter>头文件\DsGraph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DsGraph\type.h">
       <Filter>头文件\DsGraph</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h">
@@ -114,6 +132,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\DsOam\Interface_DsOam.h">
+      <Filter>头文件\DsOam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsOam\impl\DsOam_NCER.h">
+      <Filter>头文件\DsOam\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DsOam\Factory_DsOam.h">
       <Filter>头文件\DsOam</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "DsGraph_NCGR.h"
 
-cv::Mat DsGraph_NCGR::getOam(uint32_t charaID, OamSize sizeEnum, bool isBpp8)
+cv::Mat DsGraph_NCGR::getOam(DsOamType::OamData oamData)
 {
   //获取子数据
-  cv::Mat subData = getSubData(charaID, sizeEnum, isBpp8);
+  cv::Mat subData = getSubData(oamData.charaId, oamData.oamRect.size(), oamData.isBpp8);
 
-  cv::Size2i oamMeasure = oamSizeMapper.at(sizeEnum);
+  cv::Size2i oamMeasure = oamData.oamRect.size();
   cv::Size2i oamTileMeasure = oamMeasure / 8;
   int32_t tileCount = oamTileMeasure.width * oamTileMeasure.height;
 
@@ -15,7 +15,7 @@ cv::Mat DsGraph_NCGR::getOam(uint32_t charaID, OamSize sizeEnum, bool isBpp8)
   for (int i = 0; i < oamTileMeasure.height; i++)
   {
     for (int j = 0; j < oamTileMeasure.width; j++) {
-      auto tileImg = subData(cv::Rect2i((i * oamTileMeasure.height + j) * 64, 0, 64, 1)).reshape(0, { 8,8 });
+      auto tileImg = subData(cv::Rect2i((i * oamTileMeasure.width + j) * 64, 0, 64, 1)).reshape(0, { 8,8 });
       auto roi = cv::Rect2i(j * 8, i * 8, 8, 8);
       tileImg.copyTo(outOam(roi));
     }

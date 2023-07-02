@@ -1,10 +1,10 @@
 ﻿#include "Factory_DsGraph.h"
-
-std::shared_ptr<Interface_DsGraph> Factory_DsGraph::getInstance(dsGraphFormat format)
+#include "pch.h"
+std::shared_ptr<Interface_DsGraph> Factory_DsGraph::getInstance(dsOamFormat format)
 {
   switch (format)
   {
-  case dsGraphFormat::NCGR:return std::make_shared<DsGraph_NCGR>();
-  case dsGraphFormat::NCBR:return std::make_shared<DsGraph_NCBR>();
+  case dsOamFormat::NCGR:return std::make_shared<DsGraph_NCGR>();
+  case dsOamFormat::NCBR:return std::make_shared<DsGraph_NCBR>();
   }
 }

@@ -25,6 +25,9 @@
     <ClCompile Include="src\DsGraph\impl\DsGraph_NCBR.cpp" />
     <ClCompile Include="src\DsGraph\impl\DsGraph_NCGR.cpp" />
     <ClCompile Include="src\DsGraph\type.cpp" />
+    <ClCompile Include="src\DsOam\Factory_DsOam.cpp" />
+    <ClCompile Include="src\DsOam\impl\DsOam_NCER.cpp" />
+    <ClCompile Include="src\DsOam\Interface_DsOam.cpp" />
     <ClCompile Include="src\DsPal\Factory_DsPal.cpp" />
     <ClCompile Include="src\DsPal\Impl\DsPal_NCLR.cpp" />
     <ClCompile Include="src\DsPal\Interface_DsPal.cpp" />
@@ -36,13 +39,17 @@
     <ClInclude Include="src\DsGraph\Factory_DsGraph.h" />
     <ClInclude Include="src\DsGraph\impl\DsGraph_NCBR.h" />
     <ClInclude Include="src\DsGraph\impl\DsGraph_NCGR.h" />
-    <ClInclude Include="src\DsGraph\type.h" />
+    <ClInclude Include="src\DsOam\Factory_DsOam.h" />
+    <ClInclude Include="src\DsOam\impl\DsOam_NCER.h" />
     <ClInclude Include="src\DsOam\Interface_DsOam.h" />
     <ClInclude Include="src\DsPal\Factory_DsPal.h" />
     <ClInclude Include="src\DsPal\Impl\DsPal_NCLR.h" />
     <ClInclude Include="src\DsPal\Interface_DsPal.h" />
-    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\type.h" />
     <ClInclude Include="src\utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -1,2 +1,2 @@
-#include <DsGraph/type.h>
+#include <type.h>
 #include <pch.h>
