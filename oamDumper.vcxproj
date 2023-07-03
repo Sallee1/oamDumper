@@ -19,12 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.cpp" />
     <ClCompile Include="src\DsGraph\common\DsGraph_Nitro.cpp" />
     <ClCompile Include="src\DsGraph\Factory_DsGraph.cpp" />
     <ClCompile Include="src\DsGraph\impl\DsGraph_NCBR.cpp" />
     <ClCompile Include="src\DsGraph\impl\DsGraph_NCGR.cpp" />
-    <ClCompile Include="src\DsGraph\type.cpp" />
     <ClCompile Include="src\DsOam\Factory_DsOam.cpp" />
     <ClCompile Include="src\DsOam\impl\DsOam_NCER.cpp" />
     <ClCompile Include="src\DsOam\Interface_DsOam.cpp" />
@@ -47,7 +45,7 @@
     <ClInclude Include="src\DsPal\Impl\DsPal_NCLR.h" />
     <ClInclude Include="src\DsPal\Interface_DsPal.h" />
     <ClCompile Include="src\pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\type.h" />
@@ -148,7 +146,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalIncludeDirectories>$(ProjectDir)src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>

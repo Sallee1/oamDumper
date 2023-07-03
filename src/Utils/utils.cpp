@@ -1,4 +1,5 @@
-﻿#include "utils.h"
+﻿#include "pch.h"
+#include "utils.h"
 
 cv::Mat Utils::setPalette(cv::Mat graph, cv::Mat palette, int Bpp4PalId)
 {

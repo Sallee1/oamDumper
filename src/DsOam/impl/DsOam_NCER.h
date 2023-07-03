@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <pch.h>
 #include "DsOam/Interface_DsOam.h"
 
 class DsOam_NCER :public Interface_DsOam {

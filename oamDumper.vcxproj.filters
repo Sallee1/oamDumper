@@ -61,16 +61,13 @@
     <Filter Include="源文件\Utils">
       <UniqueIdentifier>{ab0bb873-e8d3-4235-a2f0-8c6b5469da4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\DsAlgorithm">
+      <UniqueIdentifier>{c723e66e-a7b8-47a0-b864-0a2af6a102b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Users\Sallee\Documents\code\C++\oamDumper\src\DsGraph\Interface_DsGraph.cpp">
-      <Filter>源文件\DsGraph</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DsGraph\type.cpp">
-      <Filter>源文件\DsGraph</Filter>
     </ClCompile>
     <ClCompile Include="src\DsGraph\Factory_DsGraph.cpp">
       <Filter>源文件\DsGraph</Filter>

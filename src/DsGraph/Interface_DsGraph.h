@@ -1,6 +1,6 @@
 ﻿#pragma once
+#include <pch.h>
 #include "type.h"
-#include "pch.h"
 
 class Interface_DsGraph
 {

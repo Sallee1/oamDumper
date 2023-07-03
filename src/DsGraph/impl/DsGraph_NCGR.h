@@ -1,7 +1,7 @@
 ﻿#pragma once
+#include <pch.h>
 #include <DsGraph/common/DsGraph_Nitro.h>
 #include <type.h>
-#include <pch.h>
 
 class DsGraph_NCGR :public DsGraph_Nitro {
 public:

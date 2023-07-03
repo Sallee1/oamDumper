@@ -1,4 +1,5 @@
-﻿#include "Interface_DsOam.h"
+﻿#include "pch.h"
+#include "Interface_DsOam.h"
 
 Interface_DsOam::OamFrame Interface_DsOam::operator[](const int& idx) {
   return oamFrameList[idx];

@@ -1,5 +1,5 @@
 ﻿#pragma once
-#pragma once
+#include <pch.h>
 #include <DsOam/Interface_DsOam.h>
 #include <DsOam/impl/DsOam_NCER.h>
 

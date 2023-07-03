@@ -1,9 +1,9 @@
-﻿#include <opencv2/opencv.hpp>
+﻿#include <pch.h>
+#include <opencv2/opencv.hpp>
 #include <DsGraph/Factory_DsGraph.h>
 #include <DsPal/Factory_DsPal.h>
 #include <DsOam/Factory_DsOam.h>
 #include <Utils/utils.h>
-#include <pch.h>
 
 int main(int argc, char* argv[])
 {

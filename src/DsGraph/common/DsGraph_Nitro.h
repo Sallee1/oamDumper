@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <pch.h>
 #include <DsGraph/Interface_DsGraph.h>
 
 //任天堂标准格式的实现

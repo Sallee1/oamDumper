@@ -1,5 +1,5 @@
-﻿#include "DsGraph_Nitro.h"
-#include "pch.h"
+﻿#include "pch.h"
+#include "DsGraph_Nitro.h"
 
 void DsGraph_Nitro::getDataFromFile(std::ifstream& graphFile)
 {

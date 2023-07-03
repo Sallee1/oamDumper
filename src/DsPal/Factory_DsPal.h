@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <pch.h>
 #include <DsPal/Interface_DsPal.h>
 #include <DsPal/Impl/DsPal_NCLR.h>
 

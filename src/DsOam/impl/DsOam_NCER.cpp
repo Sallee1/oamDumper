@@ -1,4 +1,5 @@
-﻿#include "DsOam_NCER.h"
+﻿#include "pch.h"
+#include "DsOam_NCER.h"
 
 void DsOam_NCER::getDataFromFile(std::ifstream& oamFile)
 {

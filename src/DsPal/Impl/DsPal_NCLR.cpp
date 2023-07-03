@@ -1,4 +1,5 @@
-﻿#include "DsPal_NCLR.h"
+﻿#include "pch.h"
+#include "DsPal_NCLR.h"
 
 void DsPal_NCLR::getDataFromFile(std::ifstream& palFile)
 {

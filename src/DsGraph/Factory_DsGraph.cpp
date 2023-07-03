@@ -1,5 +1,6 @@
-﻿#include "Factory_DsGraph.h"
-#include "pch.h"
+﻿#include "pch.h"
+#include "Factory_DsGraph.h"
+
 std::shared_ptr<Interface_DsGraph> Factory_DsGraph::getInstance(dsOamFormat format)
 {
   switch (format)

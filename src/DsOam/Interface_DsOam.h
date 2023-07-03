@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "pch.h"
+#include <pch.h>
 #include "type.h"
 
 class Interface_DsOam {
